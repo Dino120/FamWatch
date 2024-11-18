@@ -97,8 +97,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 100px);
-    margin-top: 200px;
+    min-height: 100vh;
+    padding: 100px 40px 40px 40px;
+    margin-top: 0;
 }
 
 .video-section {
@@ -108,7 +109,7 @@ body {
     gap: 60px;
     width: 100%;
     max-width: 1600px;
-    padding: 40px;
+    padding: 0 40px;
     margin: 0 auto;
 }
 
@@ -117,7 +118,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    min-height: 600px;
+    min-height: auto;
+    max-height: calc(100vh - 300px);
 }
 
 .video-placeholder, .video-player {
@@ -125,13 +127,14 @@ body {
     aspect-ratio: 16/9;
     background-color: #333333;
     border-radius: 15px;
-    min-height: 500px;
+    min-height: auto;
+    max-height: calc(100vh - 400px);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .divider {
-    width: 2px;
-    height: 500px;
+    height: calc(100vh - 400px);
+    max-height: 500px;
     background-color: #444;
     border-radius: 2px;
 }
