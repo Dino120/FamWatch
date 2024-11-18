@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FamWatch</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    ``````````````````````````````````````````````````````````````
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <img src="./img/FamWatch-icon.png" alt="FamWatch Logo" />
+          <!-- <p class="tagline">PURITY IN ENTERTAINMENT</p> -->
+        </div>
+        <div class="nav-links">
+          <a href="#scroll-section">ABOUT US</a>
+          <a href="#scroll-section">CONTACT</a>
+          <a href="#scroll-section">LOGIN</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="video-section">
+        <div class="video-box">
+          <video id="inputVideo" class="video-player" controls></video>
+          <div class="upload-container">
+            <input type="file" id="videoInput" accept="video/*" hidden />
+            <button
+              class="upload-btn"
+              onclick="document.getElementById('videoInput').click()"
+            >
+              <span class="btn-text">UPLOAD VIDEO</span>
+              <div class="loading-spinner"></div>
+            </button>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="video-box">
+          <video id="outputVideo" class="video-player" controls></video>
+          <button class="filter-btn" onclick="processVideo()">
+            <span class="btn-text">FILTER CONTENT</span>
+            <div class="loading-spinner"></div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="center-logo">
+      <img src="./img/FamWatch-icon.png" alt="FamWatch Logo" />
+      <p class="tagline">PURITY IN ENTERTAINMENT</p>
+    </div>
+    <script src="script.js"></script>
+    <div id="scroll-section" class="scroll-section">
+      <div class="split-container">
+        <div class="about-side">
+          <h2>ABOUT US</h2>
+          <p class="main-text">
+            FAMWATCH IS AN INNOVATIVE AI-BASED SOLUTION DESIGNED TO DETECT AND
+            MUTE ABUSIVE LANGUAGE AND PROFANITY IN VIDEOS AND MOVIES.
+          </p>
+          <div class="features-list">
+            <div class="feature-item">
+              <h3>INNOVATIVE AI-BASED SOLUTION:</h3>
+              <p>
+                DETECTS AND MUTES ABUSIVE LANGUAGE AND PROFANITY IN REAL-TIME.
+              </p>
+            </div>
+            <div class="feature-item">
+              <h3>FAMILY-FRIENDLY CONTENT:</h3>
+              <p>
+                ENSURES VIDEOS AND MOVIES REMAIN SUITABLE FOR ALL AUDIENCES.
+              </p>
+            </div>
+            <div class="feature-item">
+              <h3>ENHANCED VIEWING EXPERIENCE:</h3>
+              <p>IMPROVES CONTENT ACCESSIBILITY ACROSS VARIOUS PLATFORMS.</p>
+            </div>
+            <div class="feature-item">
+              <h3>PROMOTES SAFETY AND INCLUSIVITY:</h3>
+              <p>CONTRIBUTES TO A SAFER, MORE INCLUSIVE DIGITAL ENVIRONMENT.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="contact-side">
+          <h2>CONTACT</h2>
+          <form class="contact-form-new">
+            <div class="input-group">
+              <label>NAME :</label>
+              <input type="text" required />
+            </div>
+            <div class="input-group">
+              <label>EMAIL :</label>
+              <input type="email" required />
+            </div>
+            <div class="input-group">
+              <label>QUERY :</label>
+              <textarea rows="6" required></textarea>
+            </div>
+            <button type="submit" class="gradient-btn">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
