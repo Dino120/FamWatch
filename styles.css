@@ -29,18 +29,22 @@ body {
     flex-direction: column;
     align-items: flex-start;
     margin-left: 100px;
+    user-select: none;
+    cursor: default;
 }
 
 .logo img {
     height: 150px;
     width: auto;
     object-fit: contain;
+    pointer-events: none;
 }
 
-.tagline {
-    font-size: 18px;
+.logo .tagline {
+    font-size: 16px;
     color: #fff;
-    margin-top: 12px;
+    margin-top: 10px;
+    user-select: none;
 }
 
 .nav-links {
@@ -555,6 +559,8 @@ html {
     padding: 80px 0;
     background-color: #000;
     margin-top: 40px;
+    user-select: none;
+    cursor: default;
 }
 
 .center-logo img {
@@ -562,6 +568,7 @@ html {
     width: auto;
     object-fit: contain;
     margin-bottom: 15px;
+    pointer-events: none;
 }
 
 .center-logo .tagline {
